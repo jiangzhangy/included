@@ -1,0 +1,8 @@
+<script type="text/javascript" src="js/jQuery.1.8.3.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+         $("#cbAll").click(function(){
+                $("input[name='cbHobby']").prop("checked",$(this).prop("checked"));
+         });
+    });
+</script>

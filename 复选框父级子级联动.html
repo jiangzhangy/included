@@ -1,0 +1,35 @@
+<input type="checkbox" name="allSelected" id="allSelected" onclick="allselect()"/>父级
+
+<input type="checkbox" name="warningType" value="${rows.key }"  onclick="fatherselect()"/>子级
+<input type="checkbox" name="warningType" value="${rows.key }"  onclick="fatherselect()"/>子级
+<input type="checkbox" name="warningType" value="${rows.key }"  onclick="fatherselect()"/>子级
+<input type="checkbox" name="warningType" value="${rows.key }"  onclick="fatherselect()"/>子级
+
+<!-- 原生JS复选框
+	父级子级选中联动
+ -->
+
+<script >
+    function allselect(){
+        obj=document.getElementById("allSelected");
+        tagNamesObj=document.getElementsByName("warningType");
+        if(obj.checked){
+            for(i=0;i<tagNamesObj.length;i++){
+                tagNamesObj[i].checked=true;
+            }
+        }/*else{
+            for(i=0;i<tagNamesObj.length;i++){
+                tagNamesObj[i].checked=false;
+            }
+        }*/
+    }    
+    function fatherselect(){
+    tagNamesObj=document.getElementsByName("warningType");
+    obj=document.getElementById("allSelected");
+      for(i=0;i<tagNamesObj.length;i++){
+      if(tagNamesObj[i].checked){
+        obj.checked = false;     
+        }
+      }
+    }
+</script >
