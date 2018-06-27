@@ -1,0 +1,109 @@
+@charset "utf-8";
+/* CSS Document */
+
+.banner{
+	width:100%;
+	position:relative;
+	}
+.banner img{
+	width:100%;
+	}
+.banner .flash{
+	position:absolute;
+	top:100px;
+	right:150px;
+	}
+.title{
+	width:100%;
+	padding:20px 0;
+	font-size:20px;
+	}
+.title span{
+	font-size:18px;
+	padding-left:10px;
+	color:#ddd;
+	}
+.title a{
+	float:right;}
+.content{
+	width:1200px;
+	float:left;
+	border-top:#ddd 1px dotted;
+	margin-top:30px;
+	}
+.plate{
+	width:382px;
+	float:left;
+	padding-left:24px;
+	}
+.fist-news{
+	width:376px;
+	float:left;
+	border:#ddd 1px solid;
+	padding:10px 2px;
+	}
+.fist-news time{
+	width:80px;
+	float:left;
+	border-right:#00b9ce 1px solid;
+	text-align:center;
+	font-size:24px;
+	line-height:1.2;
+	padding:15px 0;
+	color:#00b9ce;
+	}
+.fist-news time p{
+	font-size:14px;
+	
+	}
+.news-txt{
+	width:265px;
+	float:left;
+	padding:3px 15px;
+	}
+.news-txt h3{
+	font-weight:normal;
+	font-size:16px;
+	}
+.news-txt p{
+	padding-top:5px;
+	}
+.news-txt p a{
+	color:#666;
+	}
+.news-list{
+	width:382px;
+	float:left;
+	padding-top:10px;
+	}
+.news-list li{
+	width:372px;
+	height:30px;
+	line-height:30px;
+	background:url(../images/ui01_03.png) no-repeat left center;
+	padding-left:10px;
+	}
+.fist-about{
+	width:382px;
+	float:left;
+	}
+.about-txt{
+	width:100%;
+	line-height:1.8;
+	color:#555;
+	padding-top:15px;
+	float:left;
+	}
+.about-more{
+	width:80px;
+	height:30px;
+	line-height:30px;
+	text-align:center;
+	float:left;
+	background:#f60;
+	color:#fff;
+	margin-top:25px;
+	}
+.about-more:hover{
+	color:#fff;
+	}

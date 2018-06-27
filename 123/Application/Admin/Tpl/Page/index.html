@@ -1,0 +1,56 @@
+<include file="Public:header"/>
+<!-- main -->
+<div class="main span10">
+<div class="btn-group pull-right">
+<a href="{jasxun:U(MODULE_NAME.'/'.$controller_name.'/add')}" class="btn btn-success"><i class="icon-plus icon-white"></i> 添加页面</a>
+</div>
+<h4><i class="icon-home"></i>页面管理</h4>
+<hr/>
+	<table class="table table-bordered table-wordpress postlist-table">
+		<thead>
+
+			<tr>
+				<th>编号</th>
+				<th>页面标题</th>
+				<th>页面标识</th>
+                <th>显示</th>			
+				<th>操作</th>
+			</tr>
+		</thead>
+		<tbody>
+		    <foreach name="list" item="list">
+			<tr class="tr-publish">
+                <td>{jasxun:$list['id']}</td>
+				<td><a target="_blank" href="{jasxun:U('Home/Index/Page',array('id'=>$list['id']))}">{jasxun:$list['title']}</a></td>
+				 <td>{jasxun:$list['flag']}</td>
+				<td onclick="status({jasxun:$list['id']})" id="status_{jasxun:$list['id']}">
+               <if condition="$list['status'] eq 1">
+               <span style="cursor:pointer;" class="btn btn-success disabled btn-mini"><i class="icon-ok"></i></span>
+               <else/>
+               <span style="cursor:pointer;" class="btn disabled btn-mini"><i class="icon-ban-circle"></i></span>
+               </if>
+				</td>
+				<td>
+					<div class="btn-toolbar">
+						<div class="btn-group">
+							<a href="{jasxun:U(MODULE_NAME.'/'.$controller_name.'/edit',array('id'=>$list['id'],'p'=>$_GET['p']))}" class="btn btn-mini" ><i class="icon-edit"></i> 更改</a>
+							 <a href="javascript:void(0);" class="btn btn-mini btn-danger" onclick="return confirm('确定删除此记录吗？',function(){del(<php>echo $list['id']</php>)});"><i class="icon-remove"></i> 删除</a>
+						</div>
+					</div>
+				</td>
+			</tr>
+            </foreach>
+              <tr class="text-center">
+             <td colspan="7">
+             <notempty name="list">
+                 <div class="pagination">{jasxun:$page}</div>
+             <else/>  
+                 <i class="icon-ban-circle"></i> 暂时没有数据
+             </notempty>
+             </td>
+             </tr>			
+		</tbody>
+	</table>
+</div>
+<!-- main -->
+<include file="Public:footer"/>

@@ -1,0 +1,161 @@
+<?php if (!defined('THINK_PATH')) exit();?><!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>上海冠尚机电</title>
+<link href="/Public/Home/css/public.css" rel="stylesheet" type="text/css">
+<link href="/Public/Home/css/index.css" rel="stylesheet" type="text/css">
+<link href="/Public/Home/css/style.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="/Public/Home/js/jquery-1.9.1.min.js"></script>
+
+</head>
+
+<body>
+<header class="index-head">
+ <div class="main">
+ <h1 class="none">上海冠尚机电</h1>
+ <img src="/Public/Home/images/logo_03.png" width="254" height="70" class="logo">
+ <div class="tel">400-000-0000</div>
+ <nav>
+  <h2 class="none">上海冠尚网站导航</h2>
+  <ul>
+  <?php if(is_array($nav)): foreach($nav as $key=>$list): ?><li><a href="/<?php echo $list['moudle'];?>/<?php echo $list['moudle_id']; echo C('URL_HTML_SUFFIX');?>"><?php echo $list['name'];?></a></li><?php endforeach; endif; ?>
+  </ul>
+ </nav>
+ </div>
+</header>
+<div class="clearfix"></div>
+<div class="banner">
+
+<img src="/Public/Home/images/banner_10.png">
+</div>
+
+<div class="product-show">
+ <div class="main">
+   <div class="title">产品展示<span>PRODUCT SHOW</span></div>
+   <div class="pic_con">
+	<div class="btn_change left_btn">上一页</div>
+	<div class="btn_change right_btn">下一页</div>
+	<div class="pic_content">
+		<div class="pic_lists">
+			<ul>
+				<li><img src="/Public/Home/images/pro01_13.png"/><div class="pro-txt"><h3>气动隔膜泵，泵福油漆泵</h3><p>上海凯贝机电有限公司成立于公元2001年，公司总部位于上海市徐汇区漕河泾开发区内。目前国内除上海总部及华南东莞分公司外，另在浙江宁...</p><a href="#">+ MORE</a></div></li>
+                <li><img src="/Public/Home/images/pro01_13.png"/><div class="pro-txt"><h3>气动隔膜泵，泵福油漆泵</h3><p>上海凯贝机电有限公司成立于公元2001年，公司总部位于上海市徐汇区漕河泾开发区内。目前国内除上海总部及华南东莞分公司外，另在浙江宁...</p><a href="#">+ MORE</a></div></li>
+                <li><img src="/Public/Home/images/pro01_13.png"/><div class="pro-txt"><h3>气动隔膜泵，泵福油漆泵</h3><p>上海凯贝机电有限公司成立于公元2001年，公司总部位于上海市徐汇区漕河泾开发区内。目前国内除上海总部及华南东莞分公司外，另在浙江宁...</p><a href="#">+ MORE</a></div></li>
+                <li><img src="/Public/Home/images/pro01_13.png"/><div class="pro-txt"><h3>气动隔膜泵，泵福油漆泵</h3><p>上海凯贝机电有限公司成立于公元2001年，公司总部位于上海市徐汇区漕河泾开发区内。目前国内除上海总部及华南东莞分公司外，另在浙江宁...</p><a href="#">+ MORE</a></div></li>
+                <li><img src="/Public/Home/images/pro01_13.png"/><div class="pro-txt"><h3>气动隔膜泵，泵福油漆泵</h3><p>上海凯贝机电有限公司成立于公元2001年，公司总部位于上海市徐汇区漕河泾开发区内。目前国内除上海总部及华南东莞分公司外，另在浙江宁...</p><a href="#">+ MORE</a></div></li>
+                <li><img src="/Public/Home/images/pro01_13.png"/><div class="pro-txt"><h3>气动隔膜泵，泵福油漆泵</h3><p>上海凯贝机电有限公司成立于公元2001年，公司总部位于上海市徐汇区漕河泾开发区内。目前国内除上海总部及华南东莞分公司外，另在浙江宁...</p><a href="#">+ MORE</a></div></li>
+			</ul>
+		</div>
+	</div><!--content end--> 
+
+</div>
+   
+   
+ </div>
+</div>
+
+<div class="main">
+ <div class="content">
+  <div class="plate" style=" padding-left:0px;">
+   <div class="title">新闻中心<span>NEWS CENTER</span><a href="#"><img src="/Public/Home/images/more_03.gif"></a></div>
+   <div class="fist-news">
+    <time>18<p>2016-09</p></time>
+    <div class="news-txt"><h3>气动隔膜泵，泵福油漆泵</h3><p><a href="#">上海凯贝机电有限公司成立于公元2001年，公司总部位于上海市徐汇区漕河泾开发区...</a></p></div>
+   </div>
+   <ul class="news-list">
+    <li><a href="#">上海凯贝机电有限公司成立于公元2001年</a></li>
+    <li><a href="#">公司总部位于上海市徐汇区漕河泾开发区内。目前国内除上海总部及华</a></li>
+    <li><a href="#">目前国内除上海总部及</a></li>
+    <li><a href="#">汇区漕河泾开发区内。目前国内除上海总部</a></li>
+    <li><a href="#">公司总部位于上海市徐汇区漕河泾</a></li>
+   </ul>
+  </div>
+  
+  <div class="plate">
+   <div class="title">案例展示<span>CASE SHOW</span><a href="#"><img src="/Public/Home/images/more_03.gif"></a></div>
+   <div class="fist-news">
+    <time>18<p>2016-09</p></time>
+    <div class="news-txt"><h3>气动隔膜泵，泵福油漆泵</h3><p><a href="#">上海凯贝机电有限公司成立于公元2001年，公司总部位于上海市徐汇区漕河泾开发区...</a></p></div>
+   </div>
+   <ul class="news-list">
+    <li><a href="#">上海凯贝机电有限公司成立于公元2001年</a></li>
+    <li><a href="#">公司总部位于上海市徐汇区漕河泾开发区内。目前国内除上海总部及华</a></li>
+    <li><a href="#">目前国内除上海总部及</a></li>
+    <li><a href="#">汇区漕河泾开发区内。目前国内除上海总部</a></li>
+    <li><a href="#">公司总部位于上海市徐汇区漕河泾</a></li>
+   </ul>
+  </div>
+  
+  <div class="plate">
+   <div class="title">关于我们<span>ABOUT US</span><a href="#"><img src="/Public/Home/images/more_03.gif"></a></div>
+   <div class="fist-about">
+    <IMG src="/Public/Home/images/aboutimg_17.png" width="382" height="97">
+   </div>
+   <div class="about-txt">
+    上海凯贝机电有限公司成立于公元2001年，公司总部位于上海市徐汇区漕河泾开发区内。目前国内除上海总部及华南东莞分公司外，另在浙江宁波，江苏苏州，福建厦门等地均设立办事机构，更方便及时准确的为广大客户服务。
+   </div>
+   <a href="#" class="about-more">+ MORE</a>
+  </div>
+ </div>
+</div>
+<footer class="index-bottom">
+ <div class="main">
+  <img src="/Public/Home/images/bottomlogo_25.png" width="201" height="55">
+  <div class="bottom-txt">
+   冠尚机电有限公司版权所有
+<br>
+电话：021-021-54453585 传真：021-54453580 邮箱：fgi@fgilube.com
+<br>Copyright 2007 by www.fgilube.com 沪ICP备08015241号 | 技术支持：上海登罄耘网络科技有限公司
+  </div>
+ </div>
+</footer>
+<script type="text/javascript">
+$(function(){ 
+
+	var page=1;
+	var i=3;
+	var $p_Div=$(".pic_content");
+	var $picDiv=$(".pic_lists");
+	var picNum=$picDiv.children("ul").children("li").length;
+	var page_count=Math.ceil(picNum/3);
+	var $pDiv_w=$p_Div.width()+12;
+
+	$(".right_btn").click(function(){
+		if(page_count>page){
+			$picDiv.animate({left:'-'+page*$pDiv_w+"px"},"normal");
+			page++;
+			$(".left_btn").css({'background':'url(/Public/Home/images/leftstart.jpg) no-repeat'});
+			if(page>=page_count){
+				$(this).css({'background':'url(/Public/Home/images/rightstop.jpg) no-repeat'});
+			}else{
+				$(this).css({'background':'url(/Public/Home/images/rightstart.jpg) no-repeat'});
+			}
+		} 
+		$(this).siblings(".highlight_tip").find("span").eq((page-1)).addClass("current").siblings().removeClass("current"); 	
+	});
+	
+	$(".left_btn").click(function(){
+		if(page>1){
+			$picDiv.animate({left:"+="+$pDiv_w+'px'},"normal");
+			page--;
+			$(".right_btn").css({'background':'url(/Public/Home/images/rightstart.jpg) no-repeat'});
+			if(page<=1){
+				$(this).css({'background':'url(/Public/Home/images/leftstop.jpg) no-repeat'});	 
+			}else{
+				$(this).css({'background':'url(/Public/Home/images/leftstart.jpg) no-repeat'});
+			}
+		}
+		$(this).siblings(".highlight_tip").find("span").eq((page-1)).addClass("current").siblings().removeClass("current"); 	
+	});
+	
+	$(".pic_lists>ul>li").hover(function(){
+		$(this).children("p").show();
+	},function(){
+		$(this).children("p").hide();
+	});
+	
+})
+</script>
+</body>
+</html>

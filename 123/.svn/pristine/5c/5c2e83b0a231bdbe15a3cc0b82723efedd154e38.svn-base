@@ -1,0 +1,29 @@
+<include file="Public:header"/>
+<!-- main -->
+<div class="main span10">
+    <h4>密码修改</h4>
+<hr>
+		<form action="{jasxun:U(MODULE_NAME.'/Index/changepassword')}" method="post" accept-charset="utf-8" class="well form-inline" id="f" onSubmit="return ajaxform(this,function(d){opt_ok_return(d)})">       		
+			<table class="table table-bordered table-wordpress postlist-table">
+            <tbody>
+            <tr><td>
+				<label for="subject">原始密码</label></td>
+				<td><input type="password" name="password" value="" id="password" class="span4"  />                </td>
+			</tr>
+             <tr><td>
+                <label for="newpassword">新密码</label></td>
+                <td><input type="password" name="newpassword" value="" id="newpassword" class="span4"  />                </td>
+            </tr>
+             <tr><td>
+                <label for="cnewpassword">确认新密码</label></td>
+                <td><input type="password" name="cnewpassword" value="" id="cnewpassword" class="span4"  />                </td>
+            </tr>
+            
+            <tr><td></td><td>
+			<input type="submit" name="submit" value="立即修改" id="submit" class="btn btn-large btn-success"  />        </td></tr>
+        </tbody>
+        </table>
+        
+		</form></div>
+<!-- main -->
+<include file="Public:footer"/>

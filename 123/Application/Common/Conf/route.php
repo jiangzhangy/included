@@ -1,0 +1,12 @@
+<?php
+return array(
+	//定义路由规则
+	'URL_ROUTE_RULES' 		=> array( 			
+			'/^news\/(\d+)$/' => 'Home/Index/news?cate_id=:1',	
+			'/^product\/(\d+)$/' => 'Home/Index/product?cate_id=:1',	
+			'/^content\/(\d+)$/' => 'Home/Index/content?id=:1',
+			'/^index\/content\/(\d+)\/(\d+)\/(\d+)\/(\d+)$/' => 'Home/Index/content?id=:4',
+			'/^page\/(\d+)$/' => 'Home/Index/page?id=:1',
+			'/^search/' => 'Home/Index/search',
+	),
+);

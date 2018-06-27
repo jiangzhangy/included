@@ -1,0 +1,72 @@
+<include file="Public:header"/>
+<!-- main -->
+<div class="main span10">
+    <h4><i class="icon-plus"></i>添加导航<a href="{jasxun:U(MODULE_NAME.'/'.$controller_name.'/index')}" class="pull-right" ><i class="icon-backward"></i> <strong>返回列表</strong></a></h4>
+<hr>
+		<form action="{jasxun:U(MODULE_NAME.'/'.$controller_name.'/insert')}" method="post" accept-charset="utf-8" class="well form-inline" id="f" onSubmit="return ajaxform(this,function(d){opt_ok_return(d)})">       
+			<table class="table table-bordered table-wordpress postlist-table">
+            <tbody>
+            <tr><td>
+				<label for="title">导航名称</label></td>
+				<td><input type="text" name="name" value="" id="name" class="span4"  />                </td>
+			</tr>  
+       <tr><td>
+        <label for="title">模块</label></td>
+        <td><select name="moudle">
+          <option value="">请选择</option>
+          <option value="news">文章</option>
+          <option value="product">产品</option>
+          <option value="page">页面</option>
+        </select>
+      </td>
+      </tr> 
+       <tr id="moudle_id" style="display:none"><td>
+        <label for="title">分类</label></td>
+        <td>
+          <select name="moudle_id">
+           
+         </select>
+      </td>
+      </tr>
+       <tr><td>
+        <label for="title">打开方式</label></td>
+        <td><select name="open_type"><option value="_brank">新窗口</option><option value="_parent">当前窗口</option></select></td>
+      </tr>           
+       <tr><td>
+        <label for="title">排序</label></td>
+        <td><input type="text" name="sort" value="0" id="sort" class="span4"  />                </td>
+      </tr>       
+            
+            <tr>
+            	<td></td>
+            <td>
+			<input type="submit" value="添加" id="submit" class="btn btn-large btn-success"  />  
+		   </td>
+		</tr>
+        </tbody>
+        </table>
+        
+		</form>
+</div>
+<script type="text/javascript">
+$(function(){
+ //获取城市
+  $(document).on('change','select[name="moudle"]',function(){
+    $('#moudle_id').hide('fast');
+    var url = "{jasxun:U(MODULE_NAME.'/'.$controller_name.'/get_module')}";
+    if($(this).val()!=''){
+      $.post(url,{moudle:$(this).val()},function(d){
+        if(d.s==0){
+         $('#moudle_id').show('fast'); 
+         $('select[name="moudle_id"]').html(d.html);
+        }else{
+          opt_tips({w: d.msg,t: d.s,url: d.url});
+          $('#moudle_id').hide('fast');
+          };
+        },'json')
+      }
+    });
+ });  
+</script>
+<!-- main -->
+<include file="Public:footer"/>

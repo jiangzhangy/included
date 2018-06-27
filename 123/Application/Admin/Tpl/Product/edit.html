@@ -1,0 +1,86 @@
+<include file="Public:header"/>
+<link rel="stylesheet" href="/Plugins/kindeditor-4.1.7/themes/default/default.css" />
+<script src="/Plugins/kindeditor-4.1.7/kindeditor.js"></script>
+<script src="/Plugins/kindeditor-4.1.7/zh_CN.js"></script>
+    <script>
+      KindEditor.ready(function(K) {
+       var editor = K.create('textarea[name="content"]', {
+          allowFileManager : true,
+           urlType:'domain',
+          afterBlur : function(){  
+                    //编辑器失去焦点时直接同步，可以取到值  
+                    this.sync();  
+                }  
+        });
+        K('#upload').click(function() {
+          editor.loadPlugin('image', function() {
+            editor.plugin.imageDialog({
+              showRemote : false,
+              imageUrl : K('#thumb').val(),
+              clickFn : function(url, title, width, height, border, align) {
+                K('#thumb').val(url);
+                K('#pic').attr("src",url);
+                editor.hideDialog();
+              }
+            });
+          });
+        });
+      });
+    </script>
+<!-- main -->
+<div class="main span10">
+    <h4><i class="icon-edit"></i>编辑产品<a href="{jasxun:U(MODULE_NAME.'/'.$controller_name.'/index')}" class="pull-right" ><i class="icon-backward"></i> <strong>返回列表</strong></a></h4>
+<hr>
+		<form action="{jasxun:U(MODULE_NAME.'/'.$controller_name.'/update',array('p'=>$_GET['p']))}" method="post" accept-charset="utf-8" class="well form-inline" id="f" onSubmit="return ajaxform(this,function(d){opt_ok_return(d)})">        
+			<table class="table table-bordered table-wordpress postlist-table">
+            <tbody>
+			<tr><td style="width:100px;"><label for="cate_id">产品分类</label></td>
+                <td><select id="cate_id" name="cate_id">
+                   <foreach name="cate" item="cate">
+                  <option value="{jasxun:$cate['id']}" <if condition="$cate['id'] eq $vo['cate_id']">selected="selected"</if>><if condition="$cate['level'] gt 1">{jasxun:$cate['name']}</if>{jasxun:$cate['subject']}</option>
+                  </foreach> 
+                  </select>
+                </td>
+      </tr>
+          
+            <tr><td>
+				<label for="title">标题</label></td>
+				<td><input type="text" name="title" value="{jasxun:$vo['title']}" id="title" class="span4"  />                </td>
+			</tr>
+        <tr><td>
+        <label for="title">关键词</label></td>
+        <td><input type="text" name="keyword" value="{jasxun:$vo['keyword']}" id="title" class="span4"  />                </td>
+      </tr>
+       <tr><td>
+        <label for="title">描述</label></td>
+        <td><textarea name="discription" id="discription" class="input-autosave span8" >{jasxun:$vo['discription']}</textarea>                </td>
+      </tr>
+       <tr><td>
+        <label for="title">内容</label></td>
+        <td><textarea name="content" id="content" class="input-autosave span8" >{jasxun:$vo['content']}</textarea>                </td>
+      </tr>
+      <tr><td>
+        <label for="title">图片</label></td>
+        <td><img id="pic" src="{jasxun:$vo['thumb']}" style="width:100px;height:60px;"><br/><input type="text" name="thumb" value="{jasxun:$vo['thumb']}" id="thumb" class="span6"  />
+             <span id="upload" class="btn btn-primary"><i class="icon-folder-open">选择图片</i></span>
+         </td>
+      </tr>         
+       <tr><td>
+        <label for="title">排序</label></td>
+        <td><input type="text" name="sort" value="{jasxun:$vo['sort']}" id="sort" class="span4"  />                </td>
+      </tr>       
+            
+            <tr>
+            	<td></td>
+            <td>
+               <input value="{jasxun:$vo['id']}" name="id" type="hidden">    
+			<input type="submit" value="保存" id="submit" class="btn btn-large btn-success"  />  
+		   </td>
+		</tr>
+        </tbody>
+        </table>
+        
+		</form>
+</div>
+<!-- main -->
+<include file="Public:footer"/>

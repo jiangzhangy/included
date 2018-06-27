@@ -1,0 +1,113 @@
+<include file="Public:header"/>
+<link rel="stylesheet" href="/Plugins/kindeditor-4.1.7/themes/default/default.css" />
+<script src="/Plugins/kindeditor-4.1.7/kindeditor.js"></script>
+<script src="/Plugins/kindeditor-4.1.7/zh_CN.js"></script>
+    <script>
+      KindEditor.ready(function(K) {
+        var editor = K.create('textarea[name="copyright"]', {
+          allowFileManager : true,
+          urlType:'domain',
+          afterBlur : function(){  
+                    //编辑器失去焦点时直接同步，可以取到值  
+                    this.sync();  
+                }  
+        });
+        K('#upload').click(function() {
+          editor.loadPlugin('image', function() {
+            editor.plugin.imageDialog({
+              showRemote : false,
+              imageUrl : K('#site_logo').val(),
+              clickFn : function(url, title, width, height, border, align) {
+                K('#site_logo').val(url);
+                <php>if($site['site_logo']){</php>
+                K('#pic').attr("src",url);
+                <php>}else{</php>
+                     K('#pic').html("<img src="+url+" style='width:100px; height:60px;overflow:hidden;'/><br/>");
+               <php>}</php>
+                editor.hideDialog();
+              }
+            });
+          });
+        });
+        K('#ewmupload').click(function() {
+          editor.loadPlugin('image', function() {
+            editor.plugin.imageDialog({
+              showRemote : false,
+              imageUrl : K('#ewm').val(),
+              clickFn : function(url, title, width, height, border, align) {
+                K('#ewm').val(url);
+                <php>if($site['ewm']){</php>
+                K('#ewmpic').attr("src",url);
+                <php>}else{</php>
+                     K('#ewmpic').html("<img src="+url+" style='width:100px; height:60px;overflow:hidden;'/><br/>");
+               <php>}</php>
+                editor.hideDialog();
+              }
+            });
+          });
+        });
+      });
+    </script>
+<!-- main -->
+<div class="main span10">
+    <h4><i class="icon-wrench"></i>网站信息</h4>
+<hr>
+		<form action="{jasxun:U(MODULE_NAME.'/Site/index')}" method="post" accept-charset="utf-8" class="well form-inline" id="f" onSubmit="return ajaxform(this,function(d){opt_ok_return(d)})">   		
+			<table class="table table-bordered table-wordpress postlist-table">
+            <tbody>
+            <tr><td>
+				<label for="site_name">网站名称</label></td>
+				<td><input type="text" name="site_name" value="{jasxun:$site['site_name']}" id="site_name" class="span4"  /> 
+                </td>
+			</tr>
+            <tr><td>
+                <label for="site_url">网站地址</label></td>
+                <td><input type="text" name="site_url" value="{jasxun:$site['site_url']}" id="site_url" class="span4"  /> 
+                </td>
+            </tr>
+             <tr><td>
+                <label for="site_logo">二维码</label></td>
+                <td><if condition="$site['ewm'] eq ''"><span id="ewmpic"></span>
+                    <else/><img id="ewmpic" src="{jasxun:$site['ewm']}" style="width:100px;height:60px;"><br/></if>
+                    <input type="text" name="ewm" value="{jasxun:$site['ewm']}" id="ewm" class="span6"  /> 
+                    <span id="ewmupload" class="btn btn-primary"><i class="icon-folder-open"></i>选择图片</span>
+                </td>
+            </tr>
+             <tr><td>
+                <label for="site_logo">logo</label></td>
+                <td><if condition="$site['site_logo'] eq ''"><span id="pic"></span>
+                    <else/><img id="pic" src="{jasxun:$site['site_logo']}" style="width:100px;height:60px;"><br/></if>
+                    <input type="text" name="site_logo" value="{jasxun:$site['site_logo']}" id="site_logo" class="span6"  /> 
+                    <span id="upload" class="btn btn-primary"><i class="icon-folder-open">选择图片</i></span>
+                </td>
+            </tr>
+             <tr><td>
+                <label for="keyword">关键词</label></td>
+                <td><input type="text" name="keyword" value="{jasxun:$site['keyword']}" id="keyword" class="span8"  /> 
+                </td>
+            </tr>
+             <tr><td>
+                <label for="discription">网站描述</label></td>
+                <td><textarea name="discription" id="discription" class="span8"  />{jasxun:$site['discription']} </textarea>
+                </td>
+            </tr>
+            <tr><td>
+                <label for="site_url">咨询热线</label></td>
+                <td><input type="text" name="tell" value="{jasxun:$site['tell']}" id="site_url" class="span4"  /> 
+                </td>
+            </tr>
+             <tr><td>
+                <label for="copyright">版权信息</label></td>
+                <td><textarea name="copyright" id="copyright" class="span8"  />{jasxun:$site['copyright']} </textarea>
+                </td>
+            </tr>
+            
+            <tr><td></td><td>
+             <input type="hidden" value="1" name="id">   
+			<input type="submit" name="submit" value="保存" id="submit" class="btn btn-large btn-success"  />        </td></tr>
+        </tbody>
+        </table>
+        
+		</form></div>
+<!-- main -->
+<include file="Public:footer"/>

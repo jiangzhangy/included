@@ -1,0 +1,90 @@
+<include file="Public:header"/>
+<!-- main -->
+<div class="main span10">
+<div class="btn-group pull-right">
+<a href="{jasxun:U(MODULE_NAME.'/'.$controller_name.'/add')}" class="btn btn-success"><i class="icon-plus icon-white"></i>新增产品</a>
+</div>
+<h4><i class="icon-home"></i>产品列表</h4>
+<hr/>
+     <div id="search" style="margin-left:20px;">
+		<form action="{jasxun:U(MODULE_NAME.'/'.$controller_name.'/index')}" method="get" accept-charset="utf-8" class="form-search">
+		栏目：
+		<select class="span2" style="margin-right:10px;" name="cate_id">
+		<option value="">全部--------------------------------------</option>
+		 <foreach name="cate" item="cate">
+         <option value="{jasxun:$cate['id']}" <if condition="$_REQUEST['cate_id'] eq $cate['id']">selected="selected"</if>><if condition="$cate['level'] gt 1">{jasxun:$cate['name']}</if>{jasxun:$cate['subject']}</option>   
+		 </foreach>
+		</select>
+		
+		标题：<input type="text" value="{jasxun:$_REQUEST['title']}" class="span3" name="title" placeholder="请输入标题:）">
+		 <button type="submit" class="btn btn-info"><i class="icon-search"></i>搜索</button>
+		 <span class="btn btn-danger" onclick="delAll()"><i class="icon-trash"></i>删除</span>
+		 <span class="btn btn-success" onclick="setAll('',1)"><i class="icon-ok"></i>显示</span>
+		 <span class="btn btn-warning" onclick="setAll('',0)"><i class="icon-ban-circle"></i>隐藏</span>
+		</form>
+	</div>
+	<table class="table table-bordered table-wordpress postlist-table">
+		<thead>
+			<tr>
+			    <th><label><input onclick="checkAll(this)" type="checkbox">全选</label></th>
+				<th>编号</th>
+				<th>标题</th>
+				<th>缩略图</th>	
+				<th>栏目</th>
+                <th>显示</th>	
+				<th>操作</th>
+			</tr>
+		</thead>
+		<tbody>
+		    <foreach name="list" item="list">
+			<tr class="tr-publish">
+			    <td width="50"><input type="checkbox" name="checkbox"  value="{jasxun:$list['id']}"/></td>
+                <td>{jasxun:$list['id']}</td>
+				<td><a target="_blank" href="{jasxun:U('Home/Index/show',array('id'=>$list['id']))}">{jasxun:$list['title']}</a></td>
+				<td><img src="{jasxun:$list['thumb']}" style="width:30px;height:30px;"/></td>
+                <td>{jasxun:getProductName($list['cate_id'])}</td>
+				<td onclick="status({jasxun:$list['id']})" id="status_{jasxun:$list['id']}">
+               <if condition="$list['status'] eq 1">
+               <span style="cursor:pointer;" class="btn btn-success disabled btn-mini"><i class="icon-ok"></i></span>
+               <else/>
+               <span style="cursor:pointer;" class="btn disabled btn-mini"><i class="icon-ban-circle"></i></span>
+               </if>
+				</td>
+				<td>
+					<div class="btn-toolbar">
+						<div class="btn-group">
+							<a href="{jasxun:U(MODULE_NAME.'/'.$controller_name.'/edit',array('id'=>$list['id'],'p'=>$_GET['p']))}" class="btn btn-mini" ><i class="icon-edit"></i> 更改</a>
+							 <a href="javascript:void(0);" class="btn btn-mini btn-danger" onclick="return confirm('确定删除此记录吗？',function(){del(<php>echo $list['id']</php>)});"><i class="icon-remove"></i> 删除</a>
+						</div>
+					</div>
+				</td>
+			</tr>
+    
+            </foreach>
+             <tr class="text-center">
+             <td colspan="6">
+             <notempty name="list">
+                 <div class="pagination">{jasxun:$page}</div>
+             <else/>  
+                 <i class="icon-ban-circle"></i> 暂时没有数据
+             </notempty>
+             </td>
+             </tr>		
+		</tbody>
+	</table>
+</div>
+
+<script>
+$(function(){
+	$('.postlist-table td').hover(
+		function() {
+			$(this).parent().addClass('tr-active');
+		},
+		function() {
+			$(this).parent().removeClass('tr-active');
+		}
+	);
+});
+</script>
+<!-- main -->
+<include file="Public:footer"/>

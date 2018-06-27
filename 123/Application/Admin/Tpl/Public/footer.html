@@ -1,0 +1,123 @@
+</div>
+<!-- row-fluid -->
+</div>
+<script type="text/javascript">
+$(function(){
+  //鼠标移动
+  $('.postlist-table td').hover(
+    function() {
+      $(this).parent().addClass('tr-active');
+    },
+    function() {
+      $(this).parent().removeClass('tr-active');
+    }
+  );
+  //清理缓存
+  var clearurl = "{jasxun:U(MODULE_NAME.'/Site/clearRuntime')}";
+  $("#clear").click(function(){
+     $.get(clearurl,function(data){
+        opt_tips({w: data.msg,t: data.s,url: data.url});         
+     });
+  });
+
+});
+
+//全选   
+function checkAll(o){
+      if( o.checked == true ){
+          $('input[name="checkbox"]').attr('checked','true');
+          
+      }else{
+          $('input[name="checkbox"]').removeAttr('checked');
+         
+      }
+}  
+  
+//获取已选择的ID数组
+function getChecked() {
+      var ids = new Array();
+      $.each($('.table tbody input:checked'), function(i, n){
+          if($(n).val()!=0)
+          {
+              ids.push( $(n).val() );
+          }
+          
+      });
+      return ids;
+} 
+//批量删除      
+function delAll(ids) {
+      var length = 0;
+     
+      if(ids) {
+          length = 1;
+      }else {
+          ids    = getChecked();
+          length = ids[0] == 0 ? ids.length - 1 : ids.length;
+          ids    = ids.toString();
+      }
+      if(ids=='') {
+          opt_tips({w: '请选择删除的数据',t: 1,url: ''}); 
+          return false;
+      }
+      return confirm('您将删除'+length+'条记录,确定继续？',function(){del(ids)});
+}
+//批量显示      
+function setAll(ids,status) {
+      var length = 0;
+     
+      if(ids) {
+          length = 1;
+      }else {
+          ids    = getChecked();
+          length = ids[0] == 0 ? ids.length - 1 : ids.length;
+          ids    = ids.toString();
+      }
+      if(status==1){
+        var remark = "显示";
+      }else{
+        var remark = "隐藏"
+      }
+      if(ids=='') {
+          opt_tips({w: '请选择'+remark+'的数据',t: 1,url: ''}); 
+          return false;
+      }
+      return confirm('您将'+remark+length+'条记录,确定继续？',function(){set(ids,status)});
+}
+//删除
+function del(id){
+  var url="{jasxun:U(MODULE_NAME.'/'.$controller_name.'/delete')}";
+  $.post(url,{'id':id},function(d){
+       opt_tips({w: d.msg,t: d.s,url: d.url});     
+  });
+} 
+//删除
+function set(id,status){
+  var url="{jasxun:U(MODULE_NAME.'/'.$controller_name.'/set')}";
+  $.post(url,{'id':id,'status':status},function(d){
+       opt_tips({w: d.msg,t: d.s,url: d.url});     
+  });
+} 
+//显示
+function status(id){
+  var url="{jasxun:U(MODULE_NAME.'/'.$controller_name.'/ajax_status')}";
+  $.post(url,{'id':id},function(data){
+       if(data.status==1){
+          $("#status_"+id).html(data.html);
+       }
+
+  });
+} 
+
+</script>
+<div class="footer">
+  <div class="footer_message container">
+	  <span>技术支持：249543262</span>
+	  <span><a href="">新浪微博</a></span>
+	  <span style="margin-left:10px;">微信公众号：jasxun</span>
+	  <span style="margin-left:10px;">微信号：jas-xun</span>
+	  <p style="padding-left: 5px;">2005 - 2016 @版权所有  </a></p>
+  </div>
+</div>
+</body>
+</html>

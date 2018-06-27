@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+.pic_con{width:1200px;position:relative}
+.pic_lists{float:left;width:8888px;height:173px;overflow:hidden;position:absolute;top:0px;left:0px}
+.btn_change{width:40px;height:60px;position:absolute;text-indent:-9999px;cursor:pointer}
+.left_btn{background:url(../images/leftstop.jpg) no-repeat;top:-60px;right:50px}
+.right_btn{background:url(../images/rightstart.jpg) no-repeat;top:-60px;right:0px}
+
+.pic_content{overflow:hidden;height:173px;loat:left;width:1200px;position:relative;}
+.pic_content ul li{float:left;width:400px;height:173px;}
+.pic_content ul li p{ width:100%; height:auto; padding-top:10px; color:#666; line-height:1.8}
+.pic_content ul li h3{ font-weight:normal; font-size:16px;}
+.pic_content ul li a{ width:80px; height:27px; text-align:center; line-height:27px; border:#ddd 1px solid; display:block; margin-top:15px; border-radius:3px; color:#999;}
+.pic_content ul li img{width:159px;height:173px; float:left;}
+.pic_content ul li .pro-txt{width:220px; float:left; padding:0 10px;}
+.highlight_tip{width:50%;position:relative;margin:0 auto;top: -15px;left: 20%;}
+.highlight_tip span{height:24px;padding:5px;line-height:24px;float:left;margin:0 2px;cursor:pointer}
+.highlight_tip span.current{height:18px;width:18px;line-height:18px;background:#9CC;text-align:center}

@@ -1,0 +1,37 @@
+<include file="Public:header"/>
+<!-- main -->
+<div class="main span10">
+    <h4><i class="icon-plus"></i>编辑栏目<a href="{jasxun:U(MODULE_NAME.'/'.$controller_name.'/index')}" class="pull-right" ><i class="icon-backward"></i> <strong>返回栏目列表</strong></a></h4>
+<hr>
+		<form action="{jasxun:U(MODULE_NAME.'/'.$controller_name.'/update',array('p'=>$_GET['p']))}" method="post" accept-charset="utf-8" class="well form-inline" id="f" onSubmit="return ajaxform(this,function(d){opt_ok_return(d)})">                		
+			<table class="table table-bordered table-wordpress postlist-table">
+            <tbody>
+             <tr><td>
+				<label for="parent_id">上级栏目</label></td>
+            <td>
+             <select name="parent_id">
+             <option value="0">上级栏目</option>
+            <foreach name="cate" item="cate">
+             <option value="{jasxun:$cate['id']}"<if condition="$cate['id'] eq $vo['parent_id']">selected="selected"</if>><if condition="$cate['level'] gt 1">{jasxun:$cate['name']}</if>{jasxun:$cate['subject']}</option>
+            </foreach>
+            </select>
+             </td>
+            </tr>
+            <tr><td>
+				<label for="subject">栏目名称</label></td>
+				<td><input type="text" name="subject" value="{jasxun:$vo['subject']}" id="subject" class="span4"  />                </td>
+			</tr>
+            <tr><td>
+				<label for="sort">排序</label></td>
+				<td><input type="text" name="sort" value="{jasxun:$vo['sort']}" id="sort" class="span4"  /></td>
+			</tr>
+        
+            <tr><td></td><td>
+                <input type="hidden" name="id" value="{jasxun:$vo['id']}">  
+			<input type="submit" name="submit" value="保存" id="submit" class="btn btn-large btn-success"  />        </td></tr>
+        </tbody>
+        </table>
+        
+		</form></div>
+<!-- main -->
+<include file="Public:footer"/>

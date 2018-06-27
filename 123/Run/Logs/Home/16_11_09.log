@@ -1,0 +1,1164 @@
+[ 2016-11-09T10:01:31+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+NOTIC: [2048] Declaration of Home\Action\IndexAction::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\www\www.cms.com\Application\Home\Action\IndexAction.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `site` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `links` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `links` WHERE `status` = 1 ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `nav` [ RunTime:0.0180s ]
+SQL: SELECT * FROM `nav` WHERE `status` = 1 ORDER BY sort desc LIMIT 8   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `advertise` [ RunTime:0.0230s ]
+SQL: SELECT a.site_url,a.img_url,a.title FROM advertise a left join advertise_cate c on a.cate_id=c.id  WHERE c.flag = 'side_adv' AND a.status = 1 AND c.status = 1 LIMIT 1   [ RunTime:0.0140s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.010000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-11-09T10:01:33+08:00 ] 127.0.0.1 /page/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Action\IndexAction::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\www\www.cms.com\Application\Home\Action\IndexAction.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `site` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `links` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `links` WHERE `status` = 1 ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `nav` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `nav` WHERE `status` = 1 ORDER BY sort desc LIMIT 8   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `advertise` [ RunTime:0.0020s ]
+SQL: SELECT a.site_url,a.img_url,a.title FROM advertise a left join advertise_cate c on a.cate_id=c.id  WHERE c.flag = 'side_adv' AND a.status = 1 AND c.status = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `page` [ RunTime:0.0400s ]
+SQL: SELECT * FROM `page` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-09T10:01:36+08:00 ] 127.0.0.1 /0/0.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Action\IndexAction::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\www\www.cms.com\Application\Home\Action\IndexAction.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `site` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `links` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `links` WHERE `status` = 1 ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `nav` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `nav` WHERE `status` = 1 ORDER BY sort desc LIMIT 8   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `advertise` [ RunTime:0.0020s ]
+SQL: SELECT a.site_url,a.img_url,a.title FROM advertise a left join advertise_cate c on a.cate_id=c.id  WHERE c.flag = 'side_adv' AND a.status = 1 AND c.status = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-09T10:02:43+08:00 ] 127.0.0.1 /page/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Action\IndexAction::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\www\www.cms.com\Application\Home\Action\IndexAction.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `site` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `links` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `links` WHERE `status` = 1 ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `nav` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `nav` WHERE `status` = 1 ORDER BY sort desc LIMIT 8   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `advertise` [ RunTime:0.0020s ]
+SQL: SELECT a.site_url,a.img_url,a.title FROM advertise a left join advertise_cate c on a.cate_id=c.id  WHERE c.flag = 'side_adv' AND a.status = 1 AND c.status = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `page` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `page` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-09T10:02:50+08:00 ] 127.0.0.1 /Home/Index/rongyu.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Action\IndexAction::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\www\www.cms.com\Application\Home\Action\IndexAction.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `site` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `links` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `links` WHERE `status` = 1 ORDER BY sort desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `nav` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `nav` WHERE `status` = 1 ORDER BY sort desc LIMIT 8   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `advertise` [ RunTime:0.0020s ]
+SQL: SELECT a.site_url,a.img_url,a.title FROM advertise a left join advertise_cate c on a.cate_id=c.id  WHERE c.flag = 'side_adv' AND a.status = 1 AND c.status = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-09T10:02:53+08:00 ] 127.0.0.1 /Home/Index/zongzhi.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Action\IndexAction::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\www\www.cms.com\Application\Home\Action\IndexAction.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `site` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `links` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `links` WHERE `status` = 1 ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `nav` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `nav` WHERE `status` = 1 ORDER BY sort desc LIMIT 8   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `advertise` [ RunTime:0.0030s ]
+SQL: SELECT a.site_url,a.img_url,a.title FROM advertise a left join advertise_cate c on a.cate_id=c.id  WHERE c.flag = 'side_adv' AND a.status = 1 AND c.status = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-09T10:02:57+08:00 ] 127.0.0.1 /Home/Index/contact.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Action\IndexAction::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\www\www.cms.com\Application\Home\Action\IndexAction.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `site` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `links` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `links` WHERE `status` = 1 ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `nav` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `nav` WHERE `status` = 1 ORDER BY sort desc LIMIT 8   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `advertise` [ RunTime:0.0030s ]
+SQL: SELECT a.site_url,a.img_url,a.title FROM advertise a left join advertise_cate c on a.cate_id=c.id  WHERE c.flag = 'side_adv' AND a.status = 1 AND c.status = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-09T10:03:01+08:00 ] 127.0.0.1 /Home/Index/news.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Action\IndexAction::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\www\www.cms.com\Application\Home\Action\IndexAction.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `site` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `links` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `links` WHERE `status` = 1 ORDER BY sort desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `nav` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `nav` WHERE `status` = 1 ORDER BY sort desc LIMIT 8   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `advertise` [ RunTime:0.0020s ]
+SQL: SELECT a.site_url,a.img_url,a.title FROM advertise a left join advertise_cate c on a.cate_id=c.id  WHERE c.flag = 'side_adv' AND a.status = 1 AND c.status = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0260s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE `status` = 1 LIMIT 1   [ RunTime:0.0210s ]
+SQL: SELECT * FROM `article` WHERE `status` = 1 ORDER BY id desc LIMIT 0,10   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: cate_id D:\www\www.cms.com\Application\Home\Action\IndexAction.class.php 第 32 行.
+SQL: SHOW COLUMNS FROM `article_cate` [ RunTime:0.0200s ]
+NOTIC: [8] Undefined variable: parent_id D:\www\www.cms.com\Application\Home\Action\IndexAction.class.php 第 40 行.
+SQL: SELECT `id`,`parent_id`,`subject` FROM `article_cate` WHERE `parent_id` = null ORDER BY sort asc  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: parent_id D:\www\www.cms.com\Application\Home\Action\IndexAction.class.php 第 43 行.
+NOTIC: [8] Undefined index: cate_id D:\www\www.cms.com\Application\Home\Action\IndexAction.class.php 第 46 行.
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = null LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = null LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: cate_id D:\www\www.cms.com\Run\Cache\Home\1b3a05531f9758b82a25535095161aea.php 第 49 行.
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = null LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] date() expects parameter 2 to be long, string given D:\www\www.cms.com\Run\Cache\Home\1b3a05531f9758b82a25535095161aea.php 第 60 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given D:\www\www.cms.com\Run\Cache\Home\1b3a05531f9758b82a25535095161aea.php 第 60 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given D:\www\www.cms.com\Run\Cache\Home\1b3a05531f9758b82a25535095161aea.php 第 60 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given D:\www\www.cms.com\Run\Cache\Home\1b3a05531f9758b82a25535095161aea.php 第 60 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given D:\www\www.cms.com\Run\Cache\Home\1b3a05531f9758b82a25535095161aea.php 第 60 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given D:\www\www.cms.com\Run\Cache\Home\1b3a05531f9758b82a25535095161aea.php 第 60 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given D:\www\www.cms.com\Run\Cache\Home\1b3a05531f9758b82a25535095161aea.php 第 60 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given D:\www\www.cms.com\Run\Cache\Home\1b3a05531f9758b82a25535095161aea.php 第 60 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given D:\www\www.cms.com\Run\Cache\Home\1b3a05531f9758b82a25535095161aea.php 第 60 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given D:\www\www.cms.com\Run\Cache\Home\1b3a05531f9758b82a25535095161aea.php 第 60 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-09T10:03:07+08:00 ] 127.0.0.1 /news/34.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Action\IndexAction::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\www\www.cms.com\Application\Home\Action\IndexAction.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `site` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `links` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `links` WHERE `status` = 1 ORDER BY sort desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `nav` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `nav` WHERE `status` = 1 ORDER BY sort desc LIMIT 8   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `advertise` [ RunTime:0.0030s ]
+SQL: SELECT a.site_url,a.img_url,a.title FROM advertise a left join advertise_cate c on a.cate_id=c.id  WHERE c.flag = 'side_adv' AND a.status = 1 AND c.status = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article_cate` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `article_cate` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `article_cate` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `article_cate` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `article_cate` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `article_cate` WHERE `status` = 1  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `article_cate` WHERE `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE `status` = 1 AND `cate_id` IN ('35','44','45','46','47','34') LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `article` WHERE `status` = 1 AND `cate_id` IN ('35','44','45','46','47','34') ORDER BY id desc LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`parent_id` FROM `article_cate` WHERE `id` = 34 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`parent_id`,`subject` FROM `article_cate` WHERE `parent_id` = 34 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = 34 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = 34 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = 34 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = 34 LIMIT 1   [ RunTime:0.0010s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-09T10:03:10+08:00 ] 127.0.0.1 /product/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Action\IndexAction::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\www\www.cms.com\Application\Home\Action\IndexAction.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `site` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `links` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `links` WHERE `status` = 1 ORDER BY sort desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `nav` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `nav` WHERE `status` = 1 ORDER BY sort desc LIMIT 8   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `advertise` [ RunTime:0.0020s ]
+SQL: SELECT a.site_url,a.img_url,a.title FROM advertise a left join advertise_cate c on a.cate_id=c.id  WHERE c.flag = 'side_adv' AND a.status = 1 AND c.status = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `product_cate` [ RunTime:0.0300s ]
+SQL: SELECT * FROM `product_cate` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0190s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `product` WHERE `status` = 1 AND `cate_id` IN ('7') LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `product` WHERE `status` = 1 AND `cate_id` IN ('7') ORDER BY id desc LIMIT 0,20   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-09T10:03:15+08:00 ] 127.0.0.1 /news/39.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Action\IndexAction::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\www\www.cms.com\Application\Home\Action\IndexAction.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `site` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `links` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `links` WHERE `status` = 1 ORDER BY sort desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `nav` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `nav` WHERE `status` = 1 ORDER BY sort desc LIMIT 8   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `advertise` [ RunTime:0.0020s ]
+SQL: SELECT a.site_url,a.img_url,a.title FROM advertise a left join advertise_cate c on a.cate_id=c.id  WHERE c.flag = 'side_adv' AND a.status = 1 AND c.status = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `article_cate` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `article_cate` WHERE `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE `status` = 1 AND `cate_id` IN ('39') LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `article` WHERE `status` = 1 AND `cate_id` IN ('39') ORDER BY id desc LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`parent_id` FROM `article_cate` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`parent_id`,`subject` FROM `article_cate` WHERE `parent_id` = 36 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = 36 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = 36 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0010s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-09T10:03:18+08:00 ] 127.0.0.1 /news/40.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Action\IndexAction::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\www\www.cms.com\Application\Home\Action\IndexAction.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `site` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `links` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `links` WHERE `status` = 1 ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `nav` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `nav` WHERE `status` = 1 ORDER BY sort desc LIMIT 8   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `advertise` [ RunTime:0.0030s ]
+SQL: SELECT a.site_url,a.img_url,a.title FROM advertise a left join advertise_cate c on a.cate_id=c.id  WHERE c.flag = 'side_adv' AND a.status = 1 AND c.status = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article_cate` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `article_cate` WHERE `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE `status` = 1 AND `cate_id` IN ('40') LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `article` WHERE `status` = 1 AND `cate_id` IN ('40') ORDER BY id desc LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`parent_id` FROM `article_cate` WHERE `id` = 40 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`parent_id`,`subject` FROM `article_cate` WHERE `parent_id` = 40 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = 40 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = 40 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = 40 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = 40 LIMIT 1   [ RunTime:0.0010s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-09T10:03:21+08:00 ] 127.0.0.1 /news/39.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Action\IndexAction::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\www\www.cms.com\Application\Home\Action\IndexAction.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `site` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `links` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `links` WHERE `status` = 1 ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `nav` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `nav` WHERE `status` = 1 ORDER BY sort desc LIMIT 8   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `advertise` [ RunTime:0.0020s ]
+SQL: SELECT a.site_url,a.img_url,a.title FROM advertise a left join advertise_cate c on a.cate_id=c.id  WHERE c.flag = 'side_adv' AND a.status = 1 AND c.status = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article_cate` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `article_cate` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE `status` = 1 AND `cate_id` IN ('39') LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `article` WHERE `status` = 1 AND `cate_id` IN ('39') ORDER BY id desc LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`parent_id` FROM `article_cate` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`parent_id`,`subject` FROM `article_cate` WHERE `parent_id` = 36 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = 36 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = 36 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0010s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-09T10:03:24+08:00 ] 127.0.0.1 /news/39.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Action\IndexAction::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\www\www.cms.com\Application\Home\Action\IndexAction.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `site` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `links` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `links` WHERE `status` = 1 ORDER BY sort desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `nav` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `nav` WHERE `status` = 1 ORDER BY sort desc LIMIT 8   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `advertise` [ RunTime:0.0040s ]
+SQL: SELECT a.site_url,a.img_url,a.title FROM advertise a left join advertise_cate c on a.cate_id=c.id  WHERE c.flag = 'side_adv' AND a.status = 1 AND c.status = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `article_cate` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `article_cate` WHERE `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE `status` = 1 AND `cate_id` IN ('39') LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `article` WHERE `status` = 1 AND `cate_id` IN ('39') ORDER BY id desc LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`parent_id` FROM `article_cate` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`parent_id`,`subject` FROM `article_cate` WHERE `parent_id` = 36 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = 36 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = 36 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0010s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-09T10:03:24+08:00 ] 127.0.0.1 /product/7.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Action\IndexAction::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\www\www.cms.com\Application\Home\Action\IndexAction.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `site` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `links` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `links` WHERE `status` = 1 ORDER BY sort desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `nav` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `nav` WHERE `status` = 1 ORDER BY sort desc LIMIT 8   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `advertise` [ RunTime:0.0030s ]
+SQL: SELECT a.site_url,a.img_url,a.title FROM advertise a left join advertise_cate c on a.cate_id=c.id  WHERE c.flag = 'side_adv' AND a.status = 1 AND c.status = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `product_cate` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `product_cate` WHERE `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `product` WHERE `status` = 1 AND `cate_id` IN ('7') LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product` WHERE `status` = 1 AND `cate_id` IN ('7') ORDER BY id desc LIMIT 0,20   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-09T10:03:25+08:00 ] 127.0.0.1 /news/39.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Action\IndexAction::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\www\www.cms.com\Application\Home\Action\IndexAction.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `site` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `links` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `links` WHERE `status` = 1 ORDER BY sort desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `nav` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `nav` WHERE `status` = 1 ORDER BY sort desc LIMIT 8   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `advertise` [ RunTime:0.0030s ]
+SQL: SELECT a.site_url,a.img_url,a.title FROM advertise a left join advertise_cate c on a.cate_id=c.id  WHERE c.flag = 'side_adv' AND a.status = 1 AND c.status = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article_cate` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `article_cate` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE `status` = 1 AND `cate_id` IN ('39') LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `article` WHERE `status` = 1 AND `cate_id` IN ('39') ORDER BY id desc LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`parent_id` FROM `article_cate` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`parent_id`,`subject` FROM `article_cate` WHERE `parent_id` = 36 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = 36 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = 36 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = 39 LIMIT 1   [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-09T10:03:26+08:00 ] 127.0.0.1 /news/40.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Action\IndexAction::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\www\www.cms.com\Application\Home\Action\IndexAction.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `site` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `links` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `links` WHERE `status` = 1 ORDER BY sort desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `nav` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `nav` WHERE `status` = 1 ORDER BY sort desc LIMIT 8   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `advertise` [ RunTime:0.0020s ]
+SQL: SELECT a.site_url,a.img_url,a.title FROM advertise a left join advertise_cate c on a.cate_id=c.id  WHERE c.flag = 'side_adv' AND a.status = 1 AND c.status = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article_cate` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `article_cate` WHERE `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE `status` = 1 AND `cate_id` IN ('40') LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `article` WHERE `status` = 1 AND `cate_id` IN ('40') ORDER BY id desc LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`parent_id` FROM `article_cate` WHERE `id` = 40 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`parent_id`,`subject` FROM `article_cate` WHERE `parent_id` = 40 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = 40 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = 40 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = 40 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = 40 LIMIT 1   [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-09T10:03:28+08:00 ] 127.0.0.1 /news/43.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Action\IndexAction::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\www\www.cms.com\Application\Home\Action\IndexAction.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `site` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `links` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `links` WHERE `status` = 1 ORDER BY sort desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `nav` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `nav` WHERE `status` = 1 ORDER BY sort desc LIMIT 8   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `advertise` [ RunTime:0.0020s ]
+SQL: SELECT a.site_url,a.img_url,a.title FROM advertise a left join advertise_cate c on a.cate_id=c.id  WHERE c.flag = 'side_adv' AND a.status = 1 AND c.status = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `article_cate` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `article_cate` WHERE `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE `status` = 1 AND `cate_id` IN ('43') LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `article` WHERE `status` = 1 AND `cate_id` IN ('43') ORDER BY id desc LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`parent_id` FROM `article_cate` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`parent_id`,`subject` FROM `article_cate` WHERE `parent_id` = 43 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0010s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-09T10:03:30+08:00 ] 127.0.0.1 /news/40.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Action\IndexAction::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\www\www.cms.com\Application\Home\Action\IndexAction.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `site` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `links` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `links` WHERE `status` = 1 ORDER BY sort desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `nav` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `nav` WHERE `status` = 1 ORDER BY sort desc LIMIT 8   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `advertise` [ RunTime:0.0020s ]
+SQL: SELECT a.site_url,a.img_url,a.title FROM advertise a left join advertise_cate c on a.cate_id=c.id  WHERE c.flag = 'side_adv' AND a.status = 1 AND c.status = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article_cate` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `article_cate` WHERE `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE `status` = 1 AND `cate_id` IN ('40') LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `article` WHERE `status` = 1 AND `cate_id` IN ('40') ORDER BY id desc LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`parent_id` FROM `article_cate` WHERE `id` = 40 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`parent_id`,`subject` FROM `article_cate` WHERE `parent_id` = 40 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = 40 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = 40 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = 40 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = 40 LIMIT 1   [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-09T10:03:31+08:00 ] 127.0.0.1 /news/43.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Action\IndexAction::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\www\www.cms.com\Application\Home\Action\IndexAction.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `site` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `links` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `links` WHERE `status` = 1 ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `nav` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `nav` WHERE `status` = 1 ORDER BY sort desc LIMIT 8   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `advertise` [ RunTime:0.0020s ]
+SQL: SELECT a.site_url,a.img_url,a.title FROM advertise a left join advertise_cate c on a.cate_id=c.id  WHERE c.flag = 'side_adv' AND a.status = 1 AND c.status = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article_cate` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `article_cate` WHERE `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE `status` = 1 AND `cate_id` IN ('43') LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `article` WHERE `status` = 1 AND `cate_id` IN ('43') ORDER BY id desc LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`parent_id` FROM `article_cate` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`parent_id`,`subject` FROM `article_cate` WHERE `parent_id` = 43 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-09T10:03:31+08:00 ] 127.0.0.1 /news/43.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Action\IndexAction::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\www\www.cms.com\Application\Home\Action\IndexAction.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `site` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `links` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `links` WHERE `status` = 1 ORDER BY sort desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `nav` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `nav` WHERE `status` = 1 ORDER BY sort desc LIMIT 8   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `advertise` [ RunTime:0.0030s ]
+SQL: SELECT a.site_url,a.img_url,a.title FROM advertise a left join advertise_cate c on a.cate_id=c.id  WHERE c.flag = 'side_adv' AND a.status = 1 AND c.status = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article_cate` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `article_cate` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE `status` = 1 AND `cate_id` IN ('43') LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `article` WHERE `status` = 1 AND `cate_id` IN ('43') ORDER BY id desc LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`parent_id` FROM `article_cate` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`parent_id`,`subject` FROM `article_cate` WHERE `parent_id` = 43 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0010s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-09T10:03:32+08:00 ] 127.0.0.1 /news/43.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Action\IndexAction::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\www\www.cms.com\Application\Home\Action\IndexAction.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `site` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `links` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `links` WHERE `status` = 1 ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `nav` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `nav` WHERE `status` = 1 ORDER BY sort desc LIMIT 8   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `advertise` [ RunTime:0.0030s ]
+SQL: SELECT a.site_url,a.img_url,a.title FROM advertise a left join advertise_cate c on a.cate_id=c.id  WHERE c.flag = 'side_adv' AND a.status = 1 AND c.status = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article_cate` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `article_cate` WHERE `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE `status` = 1 AND `cate_id` IN ('43') LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `article` WHERE `status` = 1 AND `cate_id` IN ('43') ORDER BY id desc LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`parent_id` FROM `article_cate` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`parent_id`,`subject` FROM `article_cate` WHERE `parent_id` = 43 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-09T10:03:32+08:00 ] 127.0.0.1 /news/43.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Action\IndexAction::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\www\www.cms.com\Application\Home\Action\IndexAction.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `site` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `links` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `links` WHERE `status` = 1 ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `nav` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `nav` WHERE `status` = 1 ORDER BY sort desc LIMIT 8   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `advertise` [ RunTime:0.0020s ]
+SQL: SELECT a.site_url,a.img_url,a.title FROM advertise a left join advertise_cate c on a.cate_id=c.id  WHERE c.flag = 'side_adv' AND a.status = 1 AND c.status = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `article_cate` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `article_cate` WHERE `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE `status` = 1 AND `cate_id` IN ('43') LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `article` WHERE `status` = 1 AND `cate_id` IN ('43') ORDER BY id desc LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`parent_id` FROM `article_cate` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`parent_id`,`subject` FROM `article_cate` WHERE `parent_id` = 43 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-09T10:03:33+08:00 ] 127.0.0.1 /news/43.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Home\Action\IndexAction::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\www\www.cms.com\Application\Home\Action\IndexAction.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `site` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `links` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `links` WHERE `status` = 1 ORDER BY sort desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `nav` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `nav` WHERE `status` = 1 ORDER BY sort desc LIMIT 8   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `advertise` [ RunTime:0.0020s ]
+SQL: SELECT a.site_url,a.img_url,a.title FROM advertise a left join advertise_cate c on a.cate_id=c.id  WHERE c.flag = 'side_adv' AND a.status = 1 AND c.status = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article_cate` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `article_cate` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0050s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE `status` = 1 AND `cate_id` IN ('43') LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `article` WHERE `status` = 1 AND `cate_id` IN ('43') ORDER BY id desc LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`parent_id` FROM `article_cate` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`parent_id`,`subject` FROM `article_cate` WHERE `parent_id` = 43 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-09T10:03:33+08:00 ] 127.0.0.1 /news/43.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Home\Action\IndexAction::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\www\www.cms.com\Application\Home\Action\IndexAction.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `site` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `links` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `links` WHERE `status` = 1 ORDER BY sort desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `nav` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `nav` WHERE `status` = 1 ORDER BY sort desc LIMIT 8   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `advertise` [ RunTime:0.0020s ]
+SQL: SELECT a.site_url,a.img_url,a.title FROM advertise a left join advertise_cate c on a.cate_id=c.id  WHERE c.flag = 'side_adv' AND a.status = 1 AND c.status = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article_cate` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `article_cate` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE `status` = 1 AND `cate_id` IN ('43') LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `article` WHERE `status` = 1 AND `cate_id` IN ('43') ORDER BY id desc LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`parent_id` FROM `article_cate` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`parent_id`,`subject` FROM `article_cate` WHERE `parent_id` = 43 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-09T10:03:34+08:00 ] 127.0.0.1 /page/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Action\IndexAction::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\www\www.cms.com\Application\Home\Action\IndexAction.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `site` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `links` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `links` WHERE `status` = 1 ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `nav` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `nav` WHERE `status` = 1 ORDER BY sort desc LIMIT 8   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `advertise` [ RunTime:0.0020s ]
+SQL: SELECT a.site_url,a.img_url,a.title FROM advertise a left join advertise_cate c on a.cate_id=c.id  WHERE c.flag = 'side_adv' AND a.status = 1 AND c.status = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `page` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `page` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-09T10:03:44+08:00 ] 127.0.0.1 /0/0.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Action\IndexAction::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\www\www.cms.com\Application\Home\Action\IndexAction.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `site` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `links` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `links` WHERE `status` = 1 ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `nav` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `nav` WHERE `status` = 1 ORDER BY sort desc LIMIT 8   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `advertise` [ RunTime:0.0030s ]
+SQL: SELECT a.site_url,a.img_url,a.title FROM advertise a left join advertise_cate c on a.cate_id=c.id  WHERE c.flag = 'side_adv' AND a.status = 1 AND c.status = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-09T10:03:45+08:00 ] 127.0.0.1 /page/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Action\IndexAction::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\www\www.cms.com\Application\Home\Action\IndexAction.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `site` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `links` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `links` WHERE `status` = 1 ORDER BY sort desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `nav` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `nav` WHERE `status` = 1 ORDER BY sort desc LIMIT 8   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `advertise` [ RunTime:0.0040s ]
+SQL: SELECT a.site_url,a.img_url,a.title FROM advertise a left join advertise_cate c on a.cate_id=c.id  WHERE c.flag = 'side_adv' AND a.status = 1 AND c.status = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `page` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `page` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-09T10:03:50+08:00 ] 127.0.0.1 /news/43.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Action\IndexAction::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\www\www.cms.com\Application\Home\Action\IndexAction.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `site` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `links` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `links` WHERE `status` = 1 ORDER BY sort desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `nav` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `nav` WHERE `status` = 1 ORDER BY sort desc LIMIT 8   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `advertise` [ RunTime:0.0050s ]
+SQL: SELECT a.site_url,a.img_url,a.title FROM advertise a left join advertise_cate c on a.cate_id=c.id  WHERE c.flag = 'side_adv' AND a.status = 1 AND c.status = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article_cate` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `article_cate` WHERE `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE `status` = 1 AND `cate_id` IN ('43') LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `article` WHERE `status` = 1 AND `cate_id` IN ('43') ORDER BY id desc LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`parent_id` FROM `article_cate` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`parent_id`,`subject` FROM `article_cate` WHERE `parent_id` = 43 ORDER BY sort asc  [ RunTime:0.0000s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = 43 LIMIT 1   [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-09T10:03:51+08:00 ] 127.0.0.1 /news/40.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Action\IndexAction::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\www\www.cms.com\Application\Home\Action\IndexAction.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `site` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `links` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `links` WHERE `status` = 1 ORDER BY sort desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `nav` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `nav` WHERE `status` = 1 ORDER BY sort desc LIMIT 8   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `advertise` [ RunTime:0.0020s ]
+SQL: SELECT a.site_url,a.img_url,a.title FROM advertise a left join advertise_cate c on a.cate_id=c.id  WHERE c.flag = 'side_adv' AND a.status = 1 AND c.status = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article_cate` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `article_cate` WHERE `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0250s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `article` WHERE `status` = 1 AND `cate_id` IN ('40') LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `article` WHERE `status` = 1 AND `cate_id` IN ('40') ORDER BY id desc LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`parent_id` FROM `article_cate` WHERE `id` = 40 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`parent_id`,`subject` FROM `article_cate` WHERE `parent_id` = 40 ORDER BY sort asc  [ RunTime:0.0010s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = 40 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = 40 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = 40 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `subject` FROM `article_cate` WHERE `id` = 40 LIMIT 1   [ RunTime:0.0000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-09T10:44:50+08:00 ] 127.0.0.1 /page/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Action\IndexAction::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\www\www.cms.com\Application\Home\Action\IndexAction.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `site` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `links` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `links` WHERE `status` = 1 ORDER BY sort desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `nav` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `nav` WHERE `status` = 1 ORDER BY sort desc LIMIT 8   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `advertise` [ RunTime:0.0020s ]
+SQL: SELECT a.site_url,a.img_url,a.title FROM advertise a left join advertise_cate c on a.cate_id=c.id  WHERE c.flag = 'side_adv' AND a.status = 1 AND c.status = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `page` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `page` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-09T15:46:14+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2048] Declaration of Home\Action\IndexAction::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') D:\www\www.cms.com\Application\Home\Action\IndexAction.class.php 第 7 行.
+SQL: SHOW COLUMNS FROM `site` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `site` LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `links` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `links` WHERE `status` = 1 ORDER BY sort desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `nav` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `nav` WHERE `status` = 1 ORDER BY sort desc LIMIT 8   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `advertise` [ RunTime:0.0030s ]
+SQL: SELECT a.site_url,a.img_url,a.title FROM advertise a left join advertise_cate c on a.cate_id=c.id  WHERE c.flag = 'side_adv' AND a.status = 1 AND c.status = 1 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+

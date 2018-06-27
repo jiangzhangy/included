@@ -1,0 +1,369 @@
+[ 2016-11-10T09:19:11+08:00 ] 127.0.0.1 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010001s ]
+
+[ 2016-11-10T09:19:11+08:00 ] 127.0.0.1 /Admin/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.127007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.128007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009000s ]
+
+[ 2016-11-10T09:19:11+08:00 ] 127.0.0.1 /Admin/Login/verify_code.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-10T09:19:15+08:00 ] 127.0.0.1 /Admin/Login/verify_code.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-10T09:19:16+08:00 ] 127.0.0.1 /Admin/Login/verify_code.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-10T09:19:27+08:00 ] 127.0.0.1 /Admin/Login/checkLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant is_POST - assumed 'is_POST' D:\www\www.cms.com\Application\Admin\Action\LoginAction.class.php 第 16 行.
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0340s ]
+SQL: SELECT * FROM `admin` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: last_login_time D:\www\www.cms.com\Application\Admin\Action\LoginAction.class.php 第 35 行.
+
+[ 2016-11-10T09:19:30+08:00 ] 127.0.0.1 /Admin/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-10T09:19:38+08:00 ] 127.0.0.1 /Admin/Product/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `product_cate` [ RunTime:0.0180s ]
+SQL: SELECT * FROM `product_cate` WHERE `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0180s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `product` LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant Site - assumed 'Site' D:\www\www.cms.com\Run\Cache\Admin\86c96fa65b46193dbb0c8ace03fcde89.php 第 45 行.
+NOTIC: [8] Use of undefined constant Nav - assumed 'Nav' D:\www\www.cms.com\Run\Cache\Admin\86c96fa65b46193dbb0c8ace03fcde89.php 第 46 行.
+NOTIC: [8] Use of undefined constant Page - assumed 'Page' D:\www\www.cms.com\Run\Cache\Admin\86c96fa65b46193dbb0c8ace03fcde89.php 第 47 行.
+NOTIC: [8] Use of undefined constant Links - assumed 'Links' D:\www\www.cms.com\Run\Cache\Admin\86c96fa65b46193dbb0c8ace03fcde89.php 第 48 行.
+NOTIC: [8] Use of undefined constant Message - assumed 'Message' D:\www\www.cms.com\Run\Cache\Admin\86c96fa65b46193dbb0c8ace03fcde89.php 第 49 行.
+NOTIC: [8] Use of undefined constant Article - assumed 'Article' D:\www\www.cms.com\Run\Cache\Admin\86c96fa65b46193dbb0c8ace03fcde89.php 第 53 行.
+NOTIC: [8] Use of undefined constant ArticleCate - assumed 'ArticleCate' D:\www\www.cms.com\Run\Cache\Admin\86c96fa65b46193dbb0c8ace03fcde89.php 第 54 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' D:\www\www.cms.com\Run\Cache\Admin\86c96fa65b46193dbb0c8ace03fcde89.php 第 58 行.
+NOTIC: [8] Use of undefined constant ProductCate - assumed 'ProductCate' D:\www\www.cms.com\Run\Cache\Admin\86c96fa65b46193dbb0c8ace03fcde89.php 第 59 行.
+NOTIC: [8] Use of undefined constant Advertise - assumed 'Advertise' D:\www\www.cms.com\Run\Cache\Admin\86c96fa65b46193dbb0c8ace03fcde89.php 第 63 行.
+NOTIC: [8] Use of undefined constant AdvertiseCate - assumed 'AdvertiseCate' D:\www\www.cms.com\Run\Cache\Admin\86c96fa65b46193dbb0c8ace03fcde89.php 第 64 行.
+NOTIC: [8] Undefined index: cate_id D:\www\www.cms.com\Run\Cache\Admin\86c96fa65b46193dbb0c8ace03fcde89.php 第 111 行.
+NOTIC: [8] Undefined index: cate_id D:\www\www.cms.com\Run\Cache\Admin\86c96fa65b46193dbb0c8ace03fcde89.php 第 111 行.
+NOTIC: [8] Undefined index: cate_id D:\www\www.cms.com\Run\Cache\Admin\86c96fa65b46193dbb0c8ace03fcde89.php 第 111 行.
+NOTIC: [8] Undefined index: title D:\www\www.cms.com\Run\Cache\Admin\86c96fa65b46193dbb0c8ace03fcde89.php 第 114 行.
+NOTIC: [8] Undefined variable: list D:\www\www.cms.com\Run\Cache\Admin\86c96fa65b46193dbb0c8ace03fcde89.php 第 134 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-10T09:19:43+08:00 ] 127.0.0.1 /Admin/ProductCate/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `product_cate` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `product_cate` WHERE `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `product_cate` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `product_cate`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant Site - assumed 'Site' D:\www\www.cms.com\Run\Cache\Admin\84dae76e33984be8d356e5b70514fce3.php 第 45 行.
+NOTIC: [8] Use of undefined constant Nav - assumed 'Nav' D:\www\www.cms.com\Run\Cache\Admin\84dae76e33984be8d356e5b70514fce3.php 第 46 行.
+NOTIC: [8] Use of undefined constant Page - assumed 'Page' D:\www\www.cms.com\Run\Cache\Admin\84dae76e33984be8d356e5b70514fce3.php 第 47 行.
+NOTIC: [8] Use of undefined constant Links - assumed 'Links' D:\www\www.cms.com\Run\Cache\Admin\84dae76e33984be8d356e5b70514fce3.php 第 48 行.
+NOTIC: [8] Use of undefined constant Message - assumed 'Message' D:\www\www.cms.com\Run\Cache\Admin\84dae76e33984be8d356e5b70514fce3.php 第 49 行.
+NOTIC: [8] Use of undefined constant Article - assumed 'Article' D:\www\www.cms.com\Run\Cache\Admin\84dae76e33984be8d356e5b70514fce3.php 第 53 行.
+NOTIC: [8] Use of undefined constant ArticleCate - assumed 'ArticleCate' D:\www\www.cms.com\Run\Cache\Admin\84dae76e33984be8d356e5b70514fce3.php 第 54 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' D:\www\www.cms.com\Run\Cache\Admin\84dae76e33984be8d356e5b70514fce3.php 第 58 行.
+NOTIC: [8] Use of undefined constant ProductCate - assumed 'ProductCate' D:\www\www.cms.com\Run\Cache\Admin\84dae76e33984be8d356e5b70514fce3.php 第 59 行.
+NOTIC: [8] Use of undefined constant Advertise - assumed 'Advertise' D:\www\www.cms.com\Run\Cache\Admin\84dae76e33984be8d356e5b70514fce3.php 第 63 行.
+NOTIC: [8] Use of undefined constant AdvertiseCate - assumed 'AdvertiseCate' D:\www\www.cms.com\Run\Cache\Admin\84dae76e33984be8d356e5b70514fce3.php 第 64 行.
+NOTIC: [8] Undefined index: p D:\www\www.cms.com\Run\Cache\Admin\84dae76e33984be8d356e5b70514fce3.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\www\www.cms.com\Run\Cache\Admin\84dae76e33984be8d356e5b70514fce3.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\www\www.cms.com\Run\Cache\Admin\84dae76e33984be8d356e5b70514fce3.php 第 130 行.
+NOTIC: [8] Undefined variable: page D:\www\www.cms.com\Run\Cache\Admin\84dae76e33984be8d356e5b70514fce3.php 第 138 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-10T09:19:48+08:00 ] 127.0.0.1 /Admin/ProductCate/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `product_cate` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `product_cate` WHERE `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `product_cate` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `product_cate`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant Site - assumed 'Site' D:\www\www.cms.com\Run\Cache\Admin\84dae76e33984be8d356e5b70514fce3.php 第 45 行.
+NOTIC: [8] Use of undefined constant Nav - assumed 'Nav' D:\www\www.cms.com\Run\Cache\Admin\84dae76e33984be8d356e5b70514fce3.php 第 46 行.
+NOTIC: [8] Use of undefined constant Page - assumed 'Page' D:\www\www.cms.com\Run\Cache\Admin\84dae76e33984be8d356e5b70514fce3.php 第 47 行.
+NOTIC: [8] Use of undefined constant Links - assumed 'Links' D:\www\www.cms.com\Run\Cache\Admin\84dae76e33984be8d356e5b70514fce3.php 第 48 行.
+NOTIC: [8] Use of undefined constant Message - assumed 'Message' D:\www\www.cms.com\Run\Cache\Admin\84dae76e33984be8d356e5b70514fce3.php 第 49 行.
+NOTIC: [8] Use of undefined constant Article - assumed 'Article' D:\www\www.cms.com\Run\Cache\Admin\84dae76e33984be8d356e5b70514fce3.php 第 53 行.
+NOTIC: [8] Use of undefined constant ArticleCate - assumed 'ArticleCate' D:\www\www.cms.com\Run\Cache\Admin\84dae76e33984be8d356e5b70514fce3.php 第 54 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' D:\www\www.cms.com\Run\Cache\Admin\84dae76e33984be8d356e5b70514fce3.php 第 58 行.
+NOTIC: [8] Use of undefined constant ProductCate - assumed 'ProductCate' D:\www\www.cms.com\Run\Cache\Admin\84dae76e33984be8d356e5b70514fce3.php 第 59 行.
+NOTIC: [8] Use of undefined constant Advertise - assumed 'Advertise' D:\www\www.cms.com\Run\Cache\Admin\84dae76e33984be8d356e5b70514fce3.php 第 63 行.
+NOTIC: [8] Use of undefined constant AdvertiseCate - assumed 'AdvertiseCate' D:\www\www.cms.com\Run\Cache\Admin\84dae76e33984be8d356e5b70514fce3.php 第 64 行.
+NOTIC: [8] Undefined index: p D:\www\www.cms.com\Run\Cache\Admin\84dae76e33984be8d356e5b70514fce3.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\www\www.cms.com\Run\Cache\Admin\84dae76e33984be8d356e5b70514fce3.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\www\www.cms.com\Run\Cache\Admin\84dae76e33984be8d356e5b70514fce3.php 第 130 行.
+NOTIC: [8] Undefined variable: page D:\www\www.cms.com\Run\Cache\Admin\84dae76e33984be8d356e5b70514fce3.php 第 138 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-10T09:19:50+08:00 ] 127.0.0.1 /Admin/Product/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `product_cate` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `product_cate` WHERE `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `product` LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant Site - assumed 'Site' D:\www\www.cms.com\Run\Cache\Admin\86c96fa65b46193dbb0c8ace03fcde89.php 第 45 行.
+NOTIC: [8] Use of undefined constant Nav - assumed 'Nav' D:\www\www.cms.com\Run\Cache\Admin\86c96fa65b46193dbb0c8ace03fcde89.php 第 46 行.
+NOTIC: [8] Use of undefined constant Page - assumed 'Page' D:\www\www.cms.com\Run\Cache\Admin\86c96fa65b46193dbb0c8ace03fcde89.php 第 47 行.
+NOTIC: [8] Use of undefined constant Links - assumed 'Links' D:\www\www.cms.com\Run\Cache\Admin\86c96fa65b46193dbb0c8ace03fcde89.php 第 48 行.
+NOTIC: [8] Use of undefined constant Message - assumed 'Message' D:\www\www.cms.com\Run\Cache\Admin\86c96fa65b46193dbb0c8ace03fcde89.php 第 49 行.
+NOTIC: [8] Use of undefined constant Article - assumed 'Article' D:\www\www.cms.com\Run\Cache\Admin\86c96fa65b46193dbb0c8ace03fcde89.php 第 53 行.
+NOTIC: [8] Use of undefined constant ArticleCate - assumed 'ArticleCate' D:\www\www.cms.com\Run\Cache\Admin\86c96fa65b46193dbb0c8ace03fcde89.php 第 54 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' D:\www\www.cms.com\Run\Cache\Admin\86c96fa65b46193dbb0c8ace03fcde89.php 第 58 行.
+NOTIC: [8] Use of undefined constant ProductCate - assumed 'ProductCate' D:\www\www.cms.com\Run\Cache\Admin\86c96fa65b46193dbb0c8ace03fcde89.php 第 59 行.
+NOTIC: [8] Use of undefined constant Advertise - assumed 'Advertise' D:\www\www.cms.com\Run\Cache\Admin\86c96fa65b46193dbb0c8ace03fcde89.php 第 63 行.
+NOTIC: [8] Use of undefined constant AdvertiseCate - assumed 'AdvertiseCate' D:\www\www.cms.com\Run\Cache\Admin\86c96fa65b46193dbb0c8ace03fcde89.php 第 64 行.
+NOTIC: [8] Undefined index: cate_id D:\www\www.cms.com\Run\Cache\Admin\86c96fa65b46193dbb0c8ace03fcde89.php 第 111 行.
+NOTIC: [8] Undefined index: cate_id D:\www\www.cms.com\Run\Cache\Admin\86c96fa65b46193dbb0c8ace03fcde89.php 第 111 行.
+NOTIC: [8] Undefined index: cate_id D:\www\www.cms.com\Run\Cache\Admin\86c96fa65b46193dbb0c8ace03fcde89.php 第 111 行.
+NOTIC: [8] Undefined index: title D:\www\www.cms.com\Run\Cache\Admin\86c96fa65b46193dbb0c8ace03fcde89.php 第 114 行.
+NOTIC: [8] Undefined variable: list D:\www\www.cms.com\Run\Cache\Admin\86c96fa65b46193dbb0c8ace03fcde89.php 第 134 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-10T09:19:52+08:00 ] 127.0.0.1 /Admin/ProductCate/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `product_cate` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `product_cate` WHERE `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `product_cate` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `product_cate`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant Site - assumed 'Site' D:\www\www.cms.com\Run\Cache\Admin\84dae76e33984be8d356e5b70514fce3.php 第 45 行.
+NOTIC: [8] Use of undefined constant Nav - assumed 'Nav' D:\www\www.cms.com\Run\Cache\Admin\84dae76e33984be8d356e5b70514fce3.php 第 46 行.
+NOTIC: [8] Use of undefined constant Page - assumed 'Page' D:\www\www.cms.com\Run\Cache\Admin\84dae76e33984be8d356e5b70514fce3.php 第 47 行.
+NOTIC: [8] Use of undefined constant Links - assumed 'Links' D:\www\www.cms.com\Run\Cache\Admin\84dae76e33984be8d356e5b70514fce3.php 第 48 行.
+NOTIC: [8] Use of undefined constant Message - assumed 'Message' D:\www\www.cms.com\Run\Cache\Admin\84dae76e33984be8d356e5b70514fce3.php 第 49 行.
+NOTIC: [8] Use of undefined constant Article - assumed 'Article' D:\www\www.cms.com\Run\Cache\Admin\84dae76e33984be8d356e5b70514fce3.php 第 53 行.
+NOTIC: [8] Use of undefined constant ArticleCate - assumed 'ArticleCate' D:\www\www.cms.com\Run\Cache\Admin\84dae76e33984be8d356e5b70514fce3.php 第 54 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' D:\www\www.cms.com\Run\Cache\Admin\84dae76e33984be8d356e5b70514fce3.php 第 58 行.
+NOTIC: [8] Use of undefined constant ProductCate - assumed 'ProductCate' D:\www\www.cms.com\Run\Cache\Admin\84dae76e33984be8d356e5b70514fce3.php 第 59 行.
+NOTIC: [8] Use of undefined constant Advertise - assumed 'Advertise' D:\www\www.cms.com\Run\Cache\Admin\84dae76e33984be8d356e5b70514fce3.php 第 63 行.
+NOTIC: [8] Use of undefined constant AdvertiseCate - assumed 'AdvertiseCate' D:\www\www.cms.com\Run\Cache\Admin\84dae76e33984be8d356e5b70514fce3.php 第 64 行.
+NOTIC: [8] Undefined index: p D:\www\www.cms.com\Run\Cache\Admin\84dae76e33984be8d356e5b70514fce3.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\www\www.cms.com\Run\Cache\Admin\84dae76e33984be8d356e5b70514fce3.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\www\www.cms.com\Run\Cache\Admin\84dae76e33984be8d356e5b70514fce3.php 第 130 行.
+NOTIC: [8] Undefined variable: page D:\www\www.cms.com\Run\Cache\Admin\84dae76e33984be8d356e5b70514fce3.php 第 138 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-10T09:19:53+08:00 ] 127.0.0.1 /Admin/Product/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `product_cate` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `product_cate` WHERE `status` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0030s ]
+SQL: SELECT COUNT(id) AS tp_count FROM `product` LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant Site - assumed 'Site' D:\www\www.cms.com\Run\Cache\Admin\86c96fa65b46193dbb0c8ace03fcde89.php 第 45 行.
+NOTIC: [8] Use of undefined constant Nav - assumed 'Nav' D:\www\www.cms.com\Run\Cache\Admin\86c96fa65b46193dbb0c8ace03fcde89.php 第 46 行.
+NOTIC: [8] Use of undefined constant Page - assumed 'Page' D:\www\www.cms.com\Run\Cache\Admin\86c96fa65b46193dbb0c8ace03fcde89.php 第 47 行.
+NOTIC: [8] Use of undefined constant Links - assumed 'Links' D:\www\www.cms.com\Run\Cache\Admin\86c96fa65b46193dbb0c8ace03fcde89.php 第 48 行.
+NOTIC: [8] Use of undefined constant Message - assumed 'Message' D:\www\www.cms.com\Run\Cache\Admin\86c96fa65b46193dbb0c8ace03fcde89.php 第 49 行.
+NOTIC: [8] Use of undefined constant Article - assumed 'Article' D:\www\www.cms.com\Run\Cache\Admin\86c96fa65b46193dbb0c8ace03fcde89.php 第 53 行.
+NOTIC: [8] Use of undefined constant ArticleCate - assumed 'ArticleCate' D:\www\www.cms.com\Run\Cache\Admin\86c96fa65b46193dbb0c8ace03fcde89.php 第 54 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' D:\www\www.cms.com\Run\Cache\Admin\86c96fa65b46193dbb0c8ace03fcde89.php 第 58 行.
+NOTIC: [8] Use of undefined constant ProductCate - assumed 'ProductCate' D:\www\www.cms.com\Run\Cache\Admin\86c96fa65b46193dbb0c8ace03fcde89.php 第 59 行.
+NOTIC: [8] Use of undefined constant Advertise - assumed 'Advertise' D:\www\www.cms.com\Run\Cache\Admin\86c96fa65b46193dbb0c8ace03fcde89.php 第 63 行.
+NOTIC: [8] Use of undefined constant AdvertiseCate - assumed 'AdvertiseCate' D:\www\www.cms.com\Run\Cache\Admin\86c96fa65b46193dbb0c8ace03fcde89.php 第 64 行.
+NOTIC: [8] Undefined index: cate_id D:\www\www.cms.com\Run\Cache\Admin\86c96fa65b46193dbb0c8ace03fcde89.php 第 111 行.
+NOTIC: [8] Undefined index: cate_id D:\www\www.cms.com\Run\Cache\Admin\86c96fa65b46193dbb0c8ace03fcde89.php 第 111 行.
+NOTIC: [8] Undefined index: cate_id D:\www\www.cms.com\Run\Cache\Admin\86c96fa65b46193dbb0c8ace03fcde89.php 第 111 行.
+NOTIC: [8] Undefined index: title D:\www\www.cms.com\Run\Cache\Admin\86c96fa65b46193dbb0c8ace03fcde89.php 第 114 行.
+NOTIC: [8] Undefined variable: list D:\www\www.cms.com\Run\Cache\Admin\86c96fa65b46193dbb0c8ace03fcde89.php 第 134 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-10T09:19:55+08:00 ] 127.0.0.1 /Admin/ProductCate/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `product_cate` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `product_cate` WHERE `status` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `product_cate` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `product_cate`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant Site - assumed 'Site' D:\www\www.cms.com\Run\Cache\Admin\84dae76e33984be8d356e5b70514fce3.php 第 45 行.
+NOTIC: [8] Use of undefined constant Nav - assumed 'Nav' D:\www\www.cms.com\Run\Cache\Admin\84dae76e33984be8d356e5b70514fce3.php 第 46 行.
+NOTIC: [8] Use of undefined constant Page - assumed 'Page' D:\www\www.cms.com\Run\Cache\Admin\84dae76e33984be8d356e5b70514fce3.php 第 47 行.
+NOTIC: [8] Use of undefined constant Links - assumed 'Links' D:\www\www.cms.com\Run\Cache\Admin\84dae76e33984be8d356e5b70514fce3.php 第 48 行.
+NOTIC: [8] Use of undefined constant Message - assumed 'Message' D:\www\www.cms.com\Run\Cache\Admin\84dae76e33984be8d356e5b70514fce3.php 第 49 行.
+NOTIC: [8] Use of undefined constant Article - assumed 'Article' D:\www\www.cms.com\Run\Cache\Admin\84dae76e33984be8d356e5b70514fce3.php 第 53 行.
+NOTIC: [8] Use of undefined constant ArticleCate - assumed 'ArticleCate' D:\www\www.cms.com\Run\Cache\Admin\84dae76e33984be8d356e5b70514fce3.php 第 54 行.
+NOTIC: [8] Use of undefined constant Product - assumed 'Product' D:\www\www.cms.com\Run\Cache\Admin\84dae76e33984be8d356e5b70514fce3.php 第 58 行.
+NOTIC: [8] Use of undefined constant ProductCate - assumed 'ProductCate' D:\www\www.cms.com\Run\Cache\Admin\84dae76e33984be8d356e5b70514fce3.php 第 59 行.
+NOTIC: [8] Use of undefined constant Advertise - assumed 'Advertise' D:\www\www.cms.com\Run\Cache\Admin\84dae76e33984be8d356e5b70514fce3.php 第 63 行.
+NOTIC: [8] Use of undefined constant AdvertiseCate - assumed 'AdvertiseCate' D:\www\www.cms.com\Run\Cache\Admin\84dae76e33984be8d356e5b70514fce3.php 第 64 行.
+NOTIC: [8] Undefined index: p D:\www\www.cms.com\Run\Cache\Admin\84dae76e33984be8d356e5b70514fce3.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\www\www.cms.com\Run\Cache\Admin\84dae76e33984be8d356e5b70514fce3.php 第 130 行.
+NOTIC: [8] Undefined index: p D:\www\www.cms.com\Run\Cache\Admin\84dae76e33984be8d356e5b70514fce3.php 第 130 行.
+NOTIC: [8] Undefined variable: page D:\www\www.cms.com\Run\Cache\Admin\84dae76e33984be8d356e5b70514fce3.php 第 138 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+

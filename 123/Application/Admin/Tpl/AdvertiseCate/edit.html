@@ -1,0 +1,25 @@
+<include file="Public:header"/>
+<!-- main -->
+<div class="main span10">
+    <h4><i class="icon-edit"></i>编辑位置<a href="{jasxun:U(MODULE_NAME.'/'.$controller_name.'/index')}" class="pull-right" ><i class="icon-backward"></i> <strong>返回列表</strong></a></h4>
+<hr>
+		<form action="{jasxun:U(MODULE_NAME.'/'.$controller_name.'/update',array('p'=>$_GET['p']))}" method="post" accept-charset="utf-8" class="well form-inline" id="f" onSubmit="return ajaxform(this,function(d){opt_ok_return(d)})">               		
+			<table class="table table-bordered table-wordpress postlist-table">
+            <tbody>
+            <tr><td>
+				<label for="subject">位置名称</label></td>
+				<td><input type="text" name="subject" value="{jasxun:$vo['subject']}" id="subject" class="span4"  />                </td>
+			</tr>
+             <tr><td>
+            	<label for="subject">位置标识</label></td>
+            	<td><input type="text" name="flag" value="{jasxun:$vo['flag']}" id="flag" class="span4"  />                </td>
+            </tr>
+            <tr><td></td><td>
+                <input type="hidden" name="id" value="{jasxun:$vo['id']}">
+			<input type="submit" name="submit" value="保存" id="submit" class="btn btn-large btn-success"  />        </td></tr>
+        </tbody>
+        </table>
+        
+		</form></div>
+<!-- main -->
+<include file="Public:footer"/>

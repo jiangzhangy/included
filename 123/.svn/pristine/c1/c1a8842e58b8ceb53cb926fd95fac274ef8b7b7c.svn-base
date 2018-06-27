@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>后台管理</title>
+<link href="__CSS__/bootstrap.css" rel="stylesheet" />
+<link href="__CSS__/font-awesome.css" rel="stylesheet" />
+<link href="__CSS__/admin.css" rel="stylesheet" />
+<script src="__JS__/jquery.js"></script>
+<script src="__JS__/bootstrap.min.js"></script>
+<script type="text/javascript" src="__JS__/common.js"></script>
+</head>
+<body>
+<!-- header -->
+<div class="header navbar navbar-fixed-top navbar-inverse">
+	<div class="navbar-inner">
+		<div class="container-fluid">
+			<a class="brand" href="{jasxun:U(MODULE_NAME.'/Index/index')}">后台管理</a>
+			<ul class="nav pull-right">
+				<li><a href="{jasxun:U(MODULE_NAME.'/Index/index')}">Hi，{jasxun:session('admin.username')}</a>
+				</li>
+				<li><a href="{jasxun:U(MODULE_NAME.'/Index/index')}">桌面管理</a>
+				</li>
+				<li><a href="{jasxun:U(MODULE_NAME.'/Index/changepassword')}"><i class="icon-key"></i>密码修改</a>
+				</li>
+				<li><a href="javascript:void(0)" id="clear"><i class="icon-trash"></i>清空缓存</a>
+        </li>
+				<li><a target="_brank" href="{jasxun:C('site_url')}"><i class="icon-forward"></i>前台首页</a>
+				</li>
+				
+                <li><a href="{jasxun:U(MODULE_NAME.'/Login/Logout')}"><i class="icon-off" ></i>安全退出</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- header -->
+<div class="container-fluid">
+	<!-- row-fluid -->
+	<div class="row-fluid wrap">
+		<!-- sidebar -->
+<div class="span2 sidebar">
+	<div class="menu">
+	<ul class="nav nav-tabs nav-stacked">
+		<li class="header"><a href="javascript:void(0);"><i class="icon-plus" ></i>网站信息</a></li>
+		<li <if condition="CONTROLLER_NAME eq Site">class="cur"</if>><a href="{jasxun:U(MODULE_NAME.'/Site/index')}">系统设置</a></li>
+		<li <if condition="CONTROLLER_NAME eq Nav">class="cur"</if>><a href="{jasxun:U(MODULE_NAME.'/Nav/index')}">导航管理</a></li>
+		<li <if condition="CONTROLLER_NAME eq Page">class="cur"</if>><a href="{jasxun:U(MODULE_NAME.'/Page/index')}">页面管理</a></li>
+		<li <if condition="CONTROLLER_NAME eq Links">class="cur"</if>><a href="{jasxun:U(MODULE_NAME.'/Links/index')}">友情链接</a></li>
+       <li <if condition="CONTROLLER_NAME eq Message">class="cur"</if>><a href="{jasxun:U(MODULE_NAME.'/Message/index')}">留言管理</a></li>
+	</ul>		
+    	<ul class="nav nav-tabs nav-stacked">
+    		<li class="header"><a href="javascript:void(0);"><i class="icon-plus"></i></i>文章管理</a></li>	
+    		<li <if condition="CONTROLLER_NAME eq Article">class="cur"</if>><a href="{jasxun:U(MODULE_NAME.'/Article/index')}">文章列表</a></li>
+            <li <if condition="CONTROLLER_NAME eq ArticleCate">class="cur"</if>><a href="{jasxun:U(MODULE_NAME.'/ArticleCate/index')}">文章栏目</a></li>
+    	</ul>
+    		<ul class="nav nav-tabs nav-stacked">
+    			<li class="header"><a href="javascript:void(0);"><i class=" icon-plus" ></i>产品管理</a></li>	
+    			<li <if condition="CONTROLLER_NAME eq Product">class="cur"</if>><a href="{jasxun:U(MODULE_NAME.'/Product/index')}">产品列表</a></li>
+    	        <li <if condition="CONTROLLER_NAME eq ProductCate">class="cur"</if>><a href="{jasxun:U(MODULE_NAME.'/ProductCate/index')}">产品栏目</a></li>
+    		</ul>
+    <ul class="nav nav-tabs nav-stacked">
+    		<li class="header"><a href="javascript:void(0);"><i class="icon-plus"></i></i>广告管理</a></li>	
+    		<li <if condition="CONTROLLER_NAME eq Advertise">class="cur"</if>><a href="{jasxun:U(MODULE_NAME.'/Advertise/index')}">广告管理</a></li>
+            <li <if condition="CONTROLLER_NAME eq AdvertiseCate">class="cur"</if>><a href="{jasxun:U(MODULE_NAME.'/AdvertiseCate/index')}">广告位置</a></li>
+    	</ul>			
+    </div>
+</div>
+<script type="text/javascript">
+$(function(){ 
+ $(".cur").parent().find('li').show();
+ $(".cur").parent('ul').siblings('ul').find('li:not(.header)').hide();
+  $(".menu .header").click(function(){
+  	if($(this).siblings().css("display")=='none'){
+  		$(this).find('i').removeClass('icon-plus');
+  		$(this).find('i').addClass('icon-minus');
+       $(this).parent().find('li').show();
+       $(this).parent('ul').siblings('ul:last-child').find('li:not(.header)').show();
+  	}else{
+  	  $(this).find('i').removeClass('icon-minus');
+  	  $(this).find('i').addClass('icon-plus');
+      $(this).parent().find('li:not(.header)').hide();
+      $(this).parent('ul').siblings('ul:last-child').find('li:not(.header)').show();
+  	}
+       
+  });
+   $(".menu .header").parent('ul').siblings('ul:last-child').find('li:not(.header)').show();
+   $(".menu .header").each(function(){
+    if($(this).siblings().css("display")!='none'){
+      $(this).find('i').removeClass('icon-plus');
+      $(this).find('i').addClass('icon-minus');	
+    }
+   });
+
+
+});
+
+</script>
+<!-- sidebar -->
